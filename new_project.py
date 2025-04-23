@@ -4,16 +4,16 @@ import shutil
 template_path = "projects/template.html"
 
 name = input("Enter the name of the new project: ")
-folder_name = name.replace(" ", "_")
+folder_name = name.replace(" ", "_").lower()
 
 try:
-    os.mkdir(f"media/projects/{name}")
+    os.mkdir(f"media/projects/{folder_name}")
 
 except FileExistsError:
     input("delete folder y/n:")
     if input() == "y": 
         shutil.rmtree(f"projects/{folder_name}")
-        os.mkdir(f"media/projects/{name}")
+        os.mkdir(f"media/projects/{folder_name}")
     else:
         print("Using existing folder")
 
