@@ -17,7 +17,7 @@ except FileExistsError:
     else:
         print("Using existing folder")
 
-input("Enter when finished puttting images in the media/projects/{folder_name} folder")
+input(f"Enter when finished puttting images in the media/projects/{folder_name} folder")
 
 # Create the HTML file
 slide_index = "".join([f'\n                   <span class="dot" onclick="currentSlide({num})"></span>' 

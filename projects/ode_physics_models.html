@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../Style.css">
+        
+        <title>Miekale Smith's Portfoilo</title>
+    
+        <div class="nav">
+            <ol>
+                <li><a href="../Home.html#home">HOME</a></li>
+                <li><a href="../Home.html#projects">PROJECTS</a></li>
+                <li><a href="../Home.html#connect">CONNECT</a></li>
+            </ol>
+        </div>
+
+    </head>
+
+    <body style="background-color: #2A2C36;">
+        <div class="project-pages">
+            <h1>Ode Physics Models</h1>
+            
+            <div class="slideshow">
+
+            
+            <div class="slide">
+                <img src="../media/projects/ode_physics_models/model.png">
+            </div>
+
+            <div class="slide">
+                <img src="../media/projects/ode_physics_models/1_chicken_egg_temperature_profile.png">
+            </div>
+
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div style="text-align:center">
+                
+                   <span class="dot" onclick="currentSlide(1)"></span>
+                   <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+            
+            <div class="project-pages-main">
+                <!-- Main Bullet points --> 
+                 <p><b>ODEs were used to analyse the following:</b></p>
+                <ul>
+                    <li><a href="https://github.com/hepromark/BicycleModelExploration">Github</a> - A bicycle model of a car - using ODEs to simulate turning stability</li>
+                    <li><a href="https://github.com/hepromark/heat-equations">Github</a> - The temperature of an egg placed in boiling water over time</li>
+                </ul>   
+                <!-- Description Paragraphs --> 
+                <p>
+                    As apart of Advanced Calculus, I used ODEs to model the temperature of an egg in boiling water and the stability of a bicycle model. 
+                    The bicycle model is a simplified version of a car, which uses a two wheel model to represent the car's dynamics. The model is used to analyze the car's turning stability.
+                    The egg temperature model uses an ODE to simulate the temperature of an egg over time, which is placed in boiling water. More info regarding the projects can be found in the links above.
+                </p>
+            </div>
+            <div class="back-button">
+                <a href="../Home.html#projects">BACK TO PROJECTS</a>
+            </div>
+            <script src="../scripts.js"></script>
+        </div>
+    </body>
+</html>
