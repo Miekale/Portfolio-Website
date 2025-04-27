@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../Style.css">
+        
+        <title>Miekale Smith's Portfoilo</title>
+    
+        <div class="nav">
+            <ol>
+                <li><a href="../Home.html#home">HOME</a></li>
+                <li><a href="../Home.html#projects">PROJECTS</a></li>
+                <li><a href="../Home.html#connect">CONNECT</a></li>
+            </ol>
+        </div>
+
+    </head>
+
+    <body style="background-color: #2A2C36;">
+        <div class="project-pages">
+            <h1>Humanoid Robot - WATonomous</h1>
+            <div class="slideshow">
+                <div class="slide">
+                    <img src="../media/projects/Articus_Printing.gif">
+                </div>
+                <div class="slide">
+                    <img src="../media/projects/nassar_process.png">
+                </div>
+                <div class="slide">
+                    <img src="../media/projects/Group_photo.jpg">
+                </div>
+    
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+
+
+            <div class="project-pages-main">
+                <ul>
+                    <li>Image and contour filtering in Python using OpenCV</li>
+                    <li>Implemented Douglas-Peucker recursive point reduction algorithm to simplify contours</li>
+                    <li>Developed PID loop in C from scratch equiped with a low pass filter</li>
+                    <li>Designed rack and pinion two axis gantry</li>
+                </ul>   
+                <p>
+                    Articus Maximus is a two axis gantry drawing robot, engineered to translate digital images into 
+                    intricate line art drawings. I worked in a group of four to develop Articus Maximus for my final project
+                    for my 1B term.<br><br>
+                    
+                    First, using OpenCV we performed edge and contour detection on an input image, finding the outline of all the objects 
+                    present. We then removed redundant points, lines and contours using an implementation of Douglas-Peucker's Algorithm
+                    and Hu Moments. The plotter then draws point to point using a PID controller that was programmed from scratch.<br><br>
+
+                    I would like to thank Professor Mohammed Nassar, whose portrait was used for the pictures above.
+                </p>
+                <div class="icon" style="text-align: center;">
+                    <a href="https://github.com/Miekale/ArticusMaximus"><img src="../media/symbols/Github_symbol.png" alt="Articus Maximus Github"></a>
+                </div> 
+            </div>
+            <div class="back-button">
+                <a href="../Home.html#projects">BACK TO PROJECTS</a>
+            </div>
+        </div>
+        <script src="../scripts.js"></script> 
+    </body>
+</html>

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../Style.css">
+        
+        <title>Miekale Smith's Portfoilo</title>
+    
+        <div class="nav">
+            <ol>
+                <li><a href="../Home.html#home">HOME</a></li>
+                <li><a href="../Home.html#projects">PROJECTS</a></li>
+                <li><a href="../Home.html#connect">CONNECT</a></li>
+            </ol>
+        </div>
+
+    </head>
+
+    <body style="background-color: #2A2C36;">
+        <div class="project-pages">
+            <h1>Mock OS Kernel</h1>
+            
+            <div class="slideshow">
+
+            
+            <div class="slide">
+                <img src="../media/projects/mock_os/Scheduler.png">
+            </div>
+
+            <div class="slide">
+                <img src="../media/projects/mock_os/memory.png">
+            </div>
+
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div style="text-align:center">
+                
+                   <span class="dot" onclick="currentSlide(1)"></span>
+                   <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+            <div class="project-pages-main">
+                <ul>
+                    <li>Designed and implemented a Shortest Process Next (SPN) scheduler with support for sleeping, timer interrupts, and clean process termination</li>
+                    <li>Simulated process state transitions and context switching with efficient state modeling</li>
+                    <li>Developed dynamic memory allocation tied to process lifecycles, ensuring safe allocation and deallocation of memory</li>
+                </ul>    
+                <p>
+                    This project was part of my Operating Systems coursework. I developed a mock OS kernel that 
+                    included a scheduler for managing processes, modeled process states, and simulated context 
+                    switching. Additionally, my group and I implemented dynamic memory allocation to handle process memory 
+                    safely and efficiently.
+                </p>
+            </div>
+            <div class="back-button">
+                <a href="../Home.html#projects">BACK TO PROJECTS</a>
+            </div>
+            <script src="../scripts.js"></script>
+        </div>
+    </body>
+</html>
